@@ -19,7 +19,7 @@ sudo systemctl restart tomcat9
 
 ## Instalation
 ```
-git clone https://gitlab.com/Luzio5/p_contrasena
+git clone https://github.com/Luzio5/entrenamos.uy.git
 
 ## Execution
 gradle :tarea1:run
