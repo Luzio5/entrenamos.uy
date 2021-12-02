@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC '-//Sun Microsystems, Inc.//DTD Web
+     Application 2.3//EN' 'http://java.sun.com/dtd/web-app_2_3.dtd'>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+    http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+    id="WebApp_ID" version="2.5">
+
+    <!-- Servlets -->
+
+    <servlet>
+        <servlet-name>ActividadServlet</servlet-name>
+        <servlet-class>com.entrenamosuy.web.ActividadServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>IndexServlet</servlet-name>
+        <servlet-class>com.entrenamosuy.web.IndexServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ClaseServlet</servlet-name>
+        <servlet-class>com.entrenamosuy.web.ClaseServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>UsuarioServlet</servlet-name>
+        <servlet-class>com.entrenamosuy.web.UsuarioServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ImagenServlet</servlet-name>
+        <servlet-class>com.entrenamosuy.web.ImagenServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>SesionServlet</servlet-name>
+        <servlet-class>com.entrenamosuy.web.SesionServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>MovilServlet</servlet-name>
+        <servlet-class>com.entrenamosuy.web.MovilServlet</servlet-class>
+    </servlet>
+
+    <!-- Default servlet mappings -->
+
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.css</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.js</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.html</url-pattern>
+    </servlet-mapping>
+
+    <!-- SesionServlet mappings -->
+
+    <servlet-mapping>
+        <servlet-name>SesionServlet</servlet-name>
+        <url-pattern>/iniciar_sesion</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>SesionServlet</servlet-name>
+        <url-pattern>/cerrar_sesion</url-pattern>
+    </servlet-mapping>
+
+    <!-- MovilServlet mappings -->
+
+    <servlet-mapping>
+        <servlet-name>MovilServlet</servlet-name>
+        <url-pattern>/index_movil</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>MovilServlet</servlet-name>
+        <url-pattern>/cerrar_sesion_movil</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>MovilServlet</servlet-name>
+        <url-pattern>/consulta_actividad_movil</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>MovilServlet</servlet-name>
+        <url-pattern>/ver_actividad_movil</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>MovilServlet</servlet-name>
+        <url-pattern>/consulta_actividad_inst_movil</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>MovilServlet</servlet-name>
+        <url-pattern>/consulta_actividad_cat_movil</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>MovilServlet</servlet-name>
+        <url-pattern>/consulta_dictado_clase_movil</url-pattern>
+    </servlet-mapping>
+    
+
+    <!-- ActividadServlet mappings -->
+
+    <servlet-mapping>
+        <servlet-name>ActividadServlet</servlet-name>
+        <url-pattern>/consulta_actividad</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ActividadServlet</servlet-name>
+        <url-pattern>/lista_actividades</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ActividadServlet</servlet-name>
+        <url-pattern>/consulta_institucion</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ActividadServlet</servlet-name>
+        <url-pattern>/alta_actividad</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ActividadServlet</servlet-name>
+        <url-pattern>/consulta_categoria</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ActividadServlet</servlet-name>
+        <url-pattern>/finalizar_actividad</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ActividadServlet</servlet-name>
+        <url-pattern>/terminar_actividad</url-pattern>
+    </servlet-mapping>
+
+    <!-- ClaseServlet mappings -->
+    
+    <servlet-mapping>
+        <servlet-name>ClaseServlet</servlet-name>
+        <url-pattern>/visualizar_premios</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ClaseServlet</servlet-name>
+        <url-pattern>/confirmar_sorteo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ClaseServlet</servlet-name>
+        <url-pattern>/realizar_sorteo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ClaseServlet</servlet-name>
+        <url-pattern>/registrarse_a_clase_1</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ClaseServlet</servlet-name>
+        <url-pattern>/registrarse_a_clase_2</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ClaseServlet</servlet-name>
+        <url-pattern>/registrarse_a_clase_3</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ClaseServlet</servlet-name>
+        <url-pattern>/confirmar_registro_clase</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ClaseServlet</servlet-name>
+        <url-pattern>/consulta_dictado_clase</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ClaseServlet</servlet-name>
+        <url-pattern>/alta_dictado_clase</url-pattern>
+    </servlet-mapping>
+
+    <!-- UsuarioServlet mappings -->
+
+    <servlet-mapping>
+        <servlet-name>UsuarioServlet</servlet-name>
+        <url-pattern>/seguir_usuario</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UsuarioServlet</servlet-name>
+        <url-pattern>/dejar_seguir_usuario</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UsuarioServlet</servlet-name>
+        <url-pattern>/lista_usuarios</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UsuarioServlet</servlet-name>
+        <url-pattern>/consulta_socio</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UsuarioServlet</servlet-name>
+        <url-pattern>/consulta_profesor</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UsuarioServlet</servlet-name>
+        <url-pattern>/alta_usuario</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UsuarioServlet</servlet-name>
+        <url-pattern>/alta_socio</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UsuarioServlet</servlet-name>
+        <url-pattern>/alta_profesor</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UsuarioServlet</servlet-name>
+        <url-pattern>/marcar_fav</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet-mapping>
+        <servlet-name>UsuarioServlet</servlet-name>
+        <url-pattern>/desmarcar_fav</url-pattern>
+    </servlet-mapping>
+
+    <!-- IndexServlet mappings -->
+
+    <servlet-mapping>
+        <servlet-name>IndexServlet</servlet-name>
+        <url-pattern/>
+    </servlet-mapping>
+
+    <!-- ImagenServlet mapping -->
+
+    <servlet-mapping>
+        <servlet-name>ImagenServlet</servlet-name>
+        <url-pattern>/img/usuario/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ImagenServlet</servlet-name>
+        <url-pattern>/img/clase/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ImagenServlet</servlet-name>
+        <url-pattern>/img/institucion/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ImagenServlet</servlet-name>
+        <url-pattern>/img/actividad/*</url-pattern>
+    </servlet-mapping>
+</web-app>
